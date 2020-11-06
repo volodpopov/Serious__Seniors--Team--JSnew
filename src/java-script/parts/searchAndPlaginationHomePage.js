@@ -14,7 +14,6 @@ function fetchFilms() {
   apiService
     .getFullRequest(variables.inputValue, variables.pageNumber)
     .then(dataFromApi => {
-      console.log(dataFromApi);
       if (dataFromApi.length === 0) {
         refsNavigation.searchFormErrorDom.replace(
           'search-form__error--hidden',
